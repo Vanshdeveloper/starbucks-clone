@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+<div class="info-br-item">
+                            <div class="first-sec-br">
+                                <div class="item-pic-br"></div>
+                                <div class="br-content">
+                                    <img src="Assests/veg.svg" alt="Veg Image">
+                                    <p class="br-name">Capuccino</p>
+                                    <p class="br-type">short</p>
+                                </div>
+                            </div>
+                            <div class="br-price-sec">
+                                <p class="br-price">₹ 283.50</p>
+                                <button class="br-add-item-btn">Add Item</button>
+                            </div>
+                        </div>

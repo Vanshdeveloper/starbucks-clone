@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --open-sans-font: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #e4e4e4;
+}
+
+header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    padding: 0 30px;
+    background: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gold);
+    z-index: 1;
+    box-shadow: 0 0 10px #00704A;
+}
+
+header .logo {
+    font-family: var(--merriweather-font);
+}
+
+header .logo img {
+    width: 40px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+header nav ul li {
+    padding: 10px 0;
+    font-family: var(--open-sans-font);
+    cursor: pointer;
+}
+
+header nav ul li a { 
+    text-decoration: none;
+    color: #000000;
+}
+
+.second-nav .ul-sec li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul .active {
+    border-bottom: 3px solid #00704A;
+}
+
+header nav ul li a:hover {
+    transition: .1s;
+    color: var(--secondary-green);
+}
+
+header #symbol-nav-open {
+    display: none;
+}
+
+header #symbol-nav-close {
+    display: none;
+}
+
+.ul-sec {
+    display: none;
+}
+
+ul .active {
+    border-bottom: 3px solid #00704A;
+}
+
+.header-placeholder {
+    height: 80px;
+}
+
+.error-div {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body .center-404 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+body .center-404 h1 {
+    font-size: 90px;
+    font-family: var(--open-sans-font);
+    font-weight: 400;
+}
+
+body .center-404 img {
+    height: 70px;
+    border: 4px solid #040404;
+    border-radius: 50%;
+}
+
+body .error-msg p {
+    font-family: var(--open-sans-font);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 676px) {
+
+    header nav ul {
+        display: none;
+    }
+
+    header #symbol-nav-open {
+        display: flex;
+    }
+
+    header #symbol-nav-close {
+        display: none;
+    }
+
+    .second-nav {
+        display: none;
+    }
+
+    .ul-sec {
+        position: fixed;
+        width: 100%;
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #c4c4c4;
+        gap: 50px;
+        z-index: 10;
+    }
+
+    .ul-sec li {
+        font-family: var(--open-sans-font);
+        color: var(--gold);
+    }
+
+    .ul-sec li:hover {
+        transition: .1s;
+        color: var(--light-gray);
+    }
+}

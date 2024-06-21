@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --open-sans-font: "Open Sans", sans-serif;
+    --StarbucksGreen: #00704A;
+    --dark-green: #0e382c;
+    --secondary-green: #005e3e;
+    --White: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--StarbucksGreen);
+}
+
+
+body {
+    width: 100%;
+    background: var(--White);
+}
+
+
+/* Header */
+
+
+header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    padding: 0 30px;
+    background: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gold);
+    z-index: 1;
+    box-shadow: 0 0 14px #00704A;
+}
+
+header .logo {
+    font-family: var(--merriweather-font);
+}
+
+header .logo img {
+    width: 40px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+header nav ul li {
+    padding: 10px 0;
+    font-family: var(--open-sans-font);
+    cursor: pointer;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.second-nav .ul-sec li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul .active {
+    border-bottom: 3px solid #00704A;
+}
+
+header nav ul li a:hover {
+    transition: .1s;
+    color: var(--secondary-green);
+}
+
+header #symbol-nav-open {
+    display: none;
+}
+
+header #symbol-nav-close {
+    display: none;
+}
+
+.ul-sec {
+    display: none;
+}
+
+.header-placeholder {
+    height: 80px;
+}
+
+/* Web Location */
+
+.location {
+    padding: 20px;
+}
+
+.location p {
+    font-family: var(--open-sans-font);
+    font-size: 14px;
+}
+
+
+/* Hero Section Starts */
+
+
+.heroSection {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-green);
+}
+
+.heroSection .herosec-1 {
+    margin: 40px 0 40px 0;
+    padding: 0 20px 0 0;
+    width: 80%;
+    background-color: var(--secondary-green);
+    border-radius: 10px;
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+
+.heroSection .herosec-1 .img1-sec1 {
+    width: 90px;
+}
+
+.heroSection .herosec-1 .herosec1-content {
+    padding: 20px 0 0 0;
+    font-family: var(--open-sans-font);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heroSection .herosec-1 .herosec1-content h3 {
+    color: #fff;
+}
+
+.heroSection .herosec-1 .herosec1-content p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.heroSection .herosec-1 .herosec1-content .hero-content-sent {
+    padding: 0 0 40px 0;
+}
+
+.heroSection .herosec-1 .herosec1-content .price-sec-1 {
+    padding: 0 0 25px 0;
+    font-weight: 200;
+    color: #fff;
+}
+
+.heroSection .herosec-1 .herosec1-content .price-sec-1 p:last-child {
+    font-weight: 700;
+}
+
+.heroSection .herosec-1 button {
+    margin: 20px 0 0 0;
+    height: 50px;
+    width: 200px;
+    color: #ffffff;
+    font-family: var(--open-sans-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--StarbucksGreen);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: .30s;
+}
+
+.heroSection .herosec-1 button:hover {
+    transition: .50s;
+    background-color: var(--dark-green);
+}
+
+/* Cards Section */
+
+.cards-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-sec h2 {
+    width: 100%;
+    padding: 20px;
+    background-color: #edebe9;
+    font-family: var(--open-sans-font);
+    color: #0e382c;
+}
+
+.cards-sec .cards {
+    margin: 30px 20px 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cards-sec .cards .card {
+    height: 180px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #bebebe;
+}
+
+.cards-sec .cards .card-img-1 {
+    background: url(Assests/anytime-card-1.png);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-3 {
+    background: url(Assests/anytime-card-3.webp);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-4 {
+    background: url(Assests/anytime-card-4.png);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-5 {
+    background: url(Assests/anytime-card-5.png);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-6 {
+    background: url(Assests/anytime-card-6.webp);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-7 {
+    background: url(Assests/anytime-card-7.webp);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-8 {
+    background: url(Assests/anytime-card-8.png);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-9 {
+    background: url(Assests/anytime-card-9.webp);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-10 {
+    background: url(Assests/anytime-card-10.webp);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-11 {
+    background: url(Assests/anytime-card-11.png);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-12 {
+    background: url(Assests/anytime-card-12.png);
+    background-size: cover;
+}
+
+.cards-sec .cards .card-img-13 {
+    background: url(Assests/anytime-card-13.png);
+    background-size: cover;
+}
+
+@media (max-width: 676px) {
+
+    header nav ul {
+        display: none;
+    }
+
+    header #symbol-nav-open {
+        display: flex;
+    }
+
+    header #symbol-nav-close {
+        display: none;
+    }
+
+    .second-nav {
+        display: none;
+    }
+
+    .ul-sec {
+        position: fixed;
+        width: 100%;
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #c4c4c4;
+        gap: 50px;
+        z-index: 10;
+    }
+
+    .ul-sec li {
+        font-family: var(--open-sans-font);
+        color: var(--gold);
+    }
+
+    .ul-sec li:hover {
+        transition: .1s;
+        color: var(--light-gray);
+    }
+
+    .heroSection .herosec-1 button {
+        height: 50px;
+        width: 170px;
+        color: #ffffff;
+        font-family: var(--open-sans-font);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: none;
+        background-color: var(--StarbucksGreen);
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .heroSection .herosec-1 button {
+        margin: 50px 0 0 0;
+        height: 50px;
+        width: 140px;
+        color: #fff;
+        font-family: var(--open-sans-font);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: none;
+        background-color: var(--StarbucksGreen);
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .heroSection .herosec-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .heroSection .herosec-1 .img1-sec1 {
+        display: none;
+    }
+
+    .heroSection .herosec-1 button {
+        position: relative;
+        margin: 0 0 0 20px;
+        height: 50px;
+        width: 170px;
+    }
+
+    .heroSection .herosec-1 .herosec1-content h3 {
+        padding: 0 0 10px 0;
+    }
+
+    .heroSection .herosec-1 .herosec1-content .hero-content-sent {
+        padding: 0 0 20px 0;
+    }
+
+    .heroSection .herosec-1 .herosec1-content .price-sec-1 {
+        padding: 0 0 0 0;
+        font-weight: 200;
+        color: #fff;
+    }
+}
