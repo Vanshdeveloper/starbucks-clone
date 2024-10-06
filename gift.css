@@ -292,8 +292,6 @@ header #symbol-nav-close {
 
 @media (max-width: 676px) {
 
-   @media (max-width: 676px) {
-
     header nav ul {
         display: none;
     }
@@ -331,7 +329,7 @@ header #symbol-nav-close {
         transition: .1s;
         color: var(--light-gray);
     }
-       
+
     .heroSection .herosec-1 button {
         height: 50px;
         width: 170px;
